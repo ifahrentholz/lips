@@ -1,0 +1,32 @@
+{
+  "name": "node-img-placeholder",
+  "version": "0.0.1",
+  "description": "run a local image placeholder service",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node local image placeholder service",
+    "node image placeholder",
+    "node",
+    "local",
+    "image",
+    "service",
+    "placeholder"
+  ],
+  "engines": {
+    "node": ">= 0.12.x"
+  },
+  "author": "Ingo Fahrentholz",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ifahrentholz/node-image-generator"
+  },
+  "dependencies": {
+    "express": "^4.13.1",
+    "gm": "^1.18.1"
+  }
+}
