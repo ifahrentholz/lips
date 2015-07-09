@@ -1,4 +1,4 @@
-Local image placeholder service running on nodeJS
+# Local image placeholder service running on nodeJS
 
 ## Install dependencies 
 First download and install [GraphicsMagick](http://www.graphicsmagick.org/) or [ImageMagick](http://www.imagemagick.org/). In Mac OS X, you can simply use [Homebrew](http://mxcl.github.io/homebrew/) and do:
