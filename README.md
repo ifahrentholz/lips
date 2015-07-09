@@ -31,3 +31,14 @@ If you want WebP support with ImageMagick, you must add the WebP option:
 
     The url pattern is:
     http://localhost/gen/:dimension.:imageType?/:fg_color?/:bg_color?/
+    
+    
+## TODO's
+
+* Refactor - distinguish functions to separate files
+* Create an Design
+* Provide a home route with an introduction index page
+* Write tests
+* Setup Travis CI
+* write an API
+
