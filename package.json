@@ -23,7 +23,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ifahrentholz/node-image-generator"
+    "url": "https://github.com/ifahrentholz/lips"
   },
   "dependencies": {
     "express": "^4.13.1",
