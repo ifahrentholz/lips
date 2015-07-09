@@ -27,7 +27,7 @@ If you want WebP support with ImageMagick, you must add the WebP option:
     npm start
     
     
-## Open your Browser at [local-server](http://localhost:3000/gen/800x800.png/fff/bada55){target="_blank"}
+## Open your Browser at <a href="http://localhost:3000/gen/800x800.png/fff/bada55" target="_blank">local-server</a>
 
     The url pattern is:
     http://localhost/gen/:dimension.:imageType?/:fg_color?/:bg_color?/
