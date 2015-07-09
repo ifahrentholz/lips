@@ -19,6 +19,9 @@
   "engines": {
     "node": ">= 0.12.x"
   },
+  "bugs": {
+    "url": "https://github.com/ifahrentholz/lips/issues"
+  },
   "author": "Ingo Fahrentholz",
   "license": "MIT",
   "repository": {
