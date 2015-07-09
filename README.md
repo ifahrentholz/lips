@@ -13,7 +13,7 @@ If you want WebP support with ImageMagick, you must add the WebP option:
 
 ## Clone this repository to your local machine
 
-    git clone https://github.com/ifahrentholz/node-image-generator.git .
+    git clone https://github.com/ifahrentholz/lips .
 
 
 ## Run npm:install to install the necessary node modules
