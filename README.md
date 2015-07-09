@@ -1,10 +1,11 @@
 # LIPS _(local image placeholder service)_
 
 ## Install dependencies 
-First download and install [GraphicsMagick](http://www.graphicsmagick.org/) or [ImageMagick](http://www.imagemagick.org/). In Mac OS X, you can simply use [Homebrew](http://mxcl.github.io/homebrew/) and do:
+First download and install [GraphicsMagick](http://www.graphicsmagick.org/) or [ImageMagick](http://www.imagemagick.org/) and [Ghostscript](http://www.ghostscript.com/). In Mac OS X, you can simply use [Homebrew](http://mxcl.github.io/homebrew/) and do:
 
     brew install imagemagick
     brew install graphicsmagick
+    brew install gs 
 
 If you want WebP support with ImageMagick, you must add the WebP option:
 

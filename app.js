@@ -22,13 +22,10 @@ var expiryDate = new Date(0);
  * Example URL:
  * http://localhost:3000/gen/800x800.png/fff/bada55
  */
-app.get('/gen/:dimension.:imageType?/:fg_color?/:bg_color?', function(req, res, next) {
+app.get('/gen/:dimension.:imageType?/:fg_color?/:bg_color?/:text?', function(req, res, next) {
   var dim = req.params.dimension.split('x');
-  var width, height, foreground, background, imageType;
+  var width, height, foreground, background, imageType, text;
 
-  /*
-   * Set image dimensions (for example 300x150)
-   */
   if(dim.length === 1) {
     width = height = dim[0] * 1;
   } else {
@@ -38,9 +35,6 @@ app.get('/gen/:dimension.:imageType?/:fg_color?/:bg_color?', function(req, res, 
   if(isNaN(width) || isNaN(height)) return next();
 
 
-  /*
-   * Set foreground color
-   */
   if(typeof req.params.fg_color !== 'undefined') {
     foreground = req.params.fg_color;
   } else {
@@ -49,9 +43,6 @@ app.get('/gen/:dimension.:imageType?/:fg_color?/:bg_color?', function(req, res, 
   if(foreground[0] !== '#') foreground = '#' + foreground;
 
 
-  /*
-   * Set background color
-   */
   if(typeof req.params.bg_color !== 'undefined') {
     background = req.params.bg_color;
   } else {
@@ -60,9 +51,6 @@ app.get('/gen/:dimension.:imageType?/:fg_color?/:bg_color?', function(req, res, 
   if(background[0] !== '#') background = '#' + background;
 
 
-  /*
-   * Set image type
-   */
   if(typeof req.params.imageType !== 'undefined') {
     imageType = req.params.imageType;
   } else {
@@ -70,19 +58,22 @@ app.get('/gen/:dimension.:imageType?/:fg_color?/:bg_color?', function(req, res, 
   }
   imageType = imageType.toLowerCase();
 
-  /*
-   * Set http header
-   */
+  if(typeof req.params.text !== 'undefined') {
+    // TODO handle case when the text is too big for the image
+    //text = req.params.text;
+    text = width + " x " + height;
+  } else {
+    text = width + " x " + height;
+  }
+
   res.setHeader("Content-Type", "image/" + imageType);
   res.setHeader("Cache-Control", "public, max-age=" + max_age)
   res.setHeader("Expires", expiryDate);
   res.setHeader("Last-Modified", expiryDate);
 
-  /*
-   * create the image
-   */
   gm(width, height, background)
-    .drawText(10, 50, "from ingo with love")
+    .font("Arial", 20)
+    .drawText(0, 0, text, "center")
     .toBuffer(imageType, function(err, buffer) {
       if(err) {
         console.log(err);
