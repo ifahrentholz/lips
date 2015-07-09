@@ -41,4 +41,5 @@ If you want WebP support with ImageMagick, you must add the WebP option:
 * Write tests
 * Setup Travis CI
 * write an API
+* ...
 
