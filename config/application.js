@@ -2,10 +2,8 @@ var env          = process.env.NODE_ENV || 'development';
 var packageJson  = require('../package.json');
 var express      = require('express');
 var path         = require('path');
-var favicon      = require('serve-favicon');
 var logger       = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser   = require('body-parser');
+
 
 global.App = {
   app    : express(),
@@ -30,9 +28,6 @@ global.App = {
 
 // Middlewares
 App.app.use(logger('dev'));
-App.app.use(bodyParser.json());
-App.app.use(bodyParser.urlencoded({extended: false}));
-App.app.use(cookieParser());
 App.app.use(express.static(App.appPath('public')));
 
 // Routes
