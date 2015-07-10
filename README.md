@@ -35,7 +35,7 @@ If you want WebP support with ImageMagick, you must add the WebP option:
     
 ## TODO's
 
-* Refactor - distinguish functions to separate files
+* ~~Refactor - distinguish functions to separate files~~
 * Create an Design
 * Provide a home route with an introduction index page
 * Write tests
