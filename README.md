@@ -1,4 +1,6 @@
-# LIPS _(local image placeholder service)_
+# LIPS 
+
+> local image placeholder service
 
 ## Install dependencies 
 First download and install [GraphicsMagick](http://www.graphicsmagick.org/) or [ImageMagick](http://www.imagemagick.org/) and [Ghostscript](http://www.ghostscript.com/). In Mac OS X, you can simply use [Homebrew](http://mxcl.github.io/homebrew/) and do:
