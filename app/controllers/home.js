@@ -16,7 +16,7 @@ var expiryDate = new Date(0);
 
 
 module.exports = function(app){
-  app.get('/gen/:dimension.:imageType?/:fg_color?/:bg_color?/:text?', function(req, res, next) {
+  app.get('/gen/:dimension.:imageType', function(req, res, next) {
     var dim = req.params.dimension.split('x');
     var width, height, foreground, background, imageType, text;
 
@@ -29,16 +29,16 @@ module.exports = function(app){
     if(isNaN(width) || isNaN(height)) return next();
 
 
-    if(typeof req.params.fg_color !== 'undefined') {
-      foreground = req.params.fg_color;
+    if(typeof req.query.fg !== 'undefined') {
+      foreground = req.query.fg;
     } else {
       foreground = defaults.fg_color;
     }
     if(foreground[0] !== '#') foreground = '#' + foreground;
 
 
-    if(typeof req.params.bg_color !== 'undefined') {
-      background = req.params.bg_color;
+    if(typeof req.query.bg !== 'undefined') {
+      background = req.query.bg;
     } else {
       background = defaults.bg_color;
     }
@@ -52,10 +52,10 @@ module.exports = function(app){
     }
     imageType = imageType.toLowerCase();
 
-    if(typeof req.params.text !== 'undefined') {
+    if(typeof req.query.text !== 'undefined') {
       // TODO handle case when the text is too long for the image
-      //text = req.params.text;
-      text = width + " x " + height;
+      text = req.query.text;
+      //text = width + " x " + height;
     } else {
       text = width + " x " + height;
     }
@@ -66,6 +66,7 @@ module.exports = function(app){
     res.setHeader("Last-Modified", expiryDate);
 
     gm(width, height, background)
+      .fill(foreground)
       .font("Arial", 20)
       .drawText(0, 0, text, "center")
       .toBuffer(imageType, function(err, buffer) {

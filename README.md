@@ -32,7 +32,7 @@ If you want WebP support with ImageMagick, you must add the WebP option:
 ## Open your Browser at <a href="http://localhost:3000/gen/800x800.png/fff/bada55" target="_blank">local-server</a>
 
     The url pattern is:
-    http://localhost/gen/:dimension.:imageType?/:fg_color?/:bg_color?/
+    http://localhost/gen/550x250.png?fg=bada55&bg=000000&text=this%20is%20sample%20text
     
     
 ## TODO's
