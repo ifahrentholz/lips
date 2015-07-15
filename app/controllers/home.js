@@ -7,8 +7,8 @@ var fs = require('fs');
  */
 var defaults = {
   imageType: "png",
-  bg_color: "e1e1e1",
-  fg_color: "181818"
+  bgColor: "e1e1e1",
+  color: "181818"
 };
 
 var max_age = 3153600;
@@ -29,10 +29,10 @@ module.exports = function(app){
     if(isNaN(width) || isNaN(height)) return next();
 
 
-    if(typeof req.query.fg !== 'undefined') {
-      foreground = req.query.fg;
+    if(typeof req.query.color !== 'undefined') {
+      foreground = req.query.color;
     } else {
-      foreground = defaults.fg_color;
+      foreground = defaults.color;
     }
     if(foreground[0] !== '#') foreground = '#' + foreground;
 
@@ -40,7 +40,7 @@ module.exports = function(app){
     if(typeof req.query.bg !== 'undefined') {
       background = req.query.bg;
     } else {
-      background = defaults.bg_color;
+      background = defaults.bgColor;
     }
     if(background[0] !== '#') background = '#' + background;
 
