@@ -11,10 +11,10 @@ global.App = {
   version: packageJson.version,
   root   : path.join(__dirname, '..'),
   appPath: function(path) {
-    return this.root + '/' + path
+    return this.root + '/' + path;
   },
   require: function(path) {
-    return require(this.appPath(path))
+    return require(this.appPath(path));
   },
   env    : env,
   start  : function() {
