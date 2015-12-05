@@ -18,7 +18,13 @@ var expiryDate = new Date(0);
 module.exports = function(app){
   app.get('/gen/:dimension.:imageType', function(req, res, next) {
     var dim = req.params.dimension.split('x');
-    var width, height, foreground, background, imageType, text;
+    var width, height, foreground, background, imageType, text, delay;
+
+      if (typeof req.query.delay !== "undefined") {
+        delay = req.query.delay;
+      } else {
+        delay = false;
+      }
 
     if(dim.length === 1) {
       width = height = dim[0] * 1;
@@ -74,7 +80,13 @@ module.exports = function(app){
           console.log(err);
           next();
         }
-        res.send(buffer);
+        if (delay) {
+            setTimeout(function() {
+              res.send(buffer);
+            }, delay);
+          } else {
+            res.send(buffer);
+          }
       });
 
   });
