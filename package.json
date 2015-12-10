@@ -1,8 +1,9 @@
 {
   "name": "node-img-placeholder",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "run a local image placeholder service",
-  "main": "app.js",
+  "main": "lib/index.js",
+  "bin": "lib/index.js",
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,11 +11,15 @@
   "keywords": [
     "node local image placeholder service",
     "node image placeholder",
+    "image placeholder",
+    "image placeholder service",
+    "image generator",
+    "placeholder",
     "node",
     "local",
     "image",
-    "service",
-    "placeholder"
+    "placeholder",
+    "service"
   ],
   "engines": {
     "node": ">= 0.12.x"
@@ -29,8 +34,7 @@
     "url": "https://github.com/ifahrentholz/lips"
   },
   "dependencies": {
-    "express": "^4.13.1",
-    "gm": "^1.18.1",
+    "express": "^4.13.3",
     "morgan": "^1.6.1"
   }
 }
