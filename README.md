@@ -44,6 +44,6 @@ If you want WebP support with ImageMagick, you must add the WebP option:
 * Setup Travis CI
 * write an API
 * Create a NPM package for easy inclusion in existing projects
-* use canvas to reduce dependencys: [Cairo|http://cairographics.org/] is a good one
+* use canvas to reduce dependencys: [Cairo](http://cairographics.org/) is a good one
 * ...
 
