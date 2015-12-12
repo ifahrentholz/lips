@@ -41,6 +41,7 @@ If you want WebP support with ImageMagick, you must add the WebP option:
 * Create an Design
 * Provide a home route with an introduction index page
 * Write tests
+* Write an image-service
 * Setup Travis CI
 * write an API
 * Create a NPM package for easy inclusion in existing projects
