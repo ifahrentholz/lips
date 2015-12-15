@@ -2,7 +2,7 @@
 
 > local image placeholder service
 
-## Install dependencies 
+## Install dependencies
 The LIPS Service was rewritten and depends now on [Cairo](http://cairographics.org/)
 
 OS | Command
@@ -28,8 +28,8 @@ Windows | [Instructions on this wiki](https://github.com/Automattic/node-canvas/
 ## Start the service
 
     npm start
-    
-    
+
+
 ## Open your Browser at:
 
     http://localhost:3000/lips/800x600.png
@@ -70,4 +70,3 @@ Windows | [Instructions on this wiki](https://github.com/Automattic/node-canvas/
 ## TODO's
 
 * Provide a home route with an introduction index page
-
