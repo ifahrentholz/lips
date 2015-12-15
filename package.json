@@ -2,7 +2,8 @@
   "name": "node-img-placeholder",
   "version": "1.0.1",
   "description": "run a local image placeholder service",
-  "main": "bin/www",
+  "main": "lib/index.js",
+  "bin": "bin/www",
   "scripts": {
     "start": "node bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
