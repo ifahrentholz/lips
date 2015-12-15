@@ -3,7 +3,7 @@
 > local image placeholder service
 
 ## Install dependencies
-The LIPS Service was rewritten and depends now on [Cairo](http://cairographics.org/)
+The LIPS service was rewritten and depends now on [Cairo](http://cairographics.org/)
 
 | OS | Command |
 | ----- | ----- |
@@ -37,7 +37,6 @@ The LIPS Service was rewritten and depends now on [Cairo](http://cairographics.o
 
 ## Configure the LIPS service to fit your needs:
     lib/config/config.js
-
 
 > User settings
 
