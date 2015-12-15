@@ -3,7 +3,7 @@
 > local image placeholder service
 
 ## Install dependencies
-The LIPS Service was rewritten and depends now on [Cairo](http://cairographics.org/)
+The LIPS service was rewritten and depends now on [Cairo](http://cairographics.org/)
 
 OS | Command
 ----- | -----
@@ -42,7 +42,7 @@ Windows | [Instructions on this wiki](https://github.com/Automattic/node-canvas/
 
 | setting | default | type
 | --------| ------- | ---- |
-| serviceName | "lips" | Boolean |
+| serviceName | "lips" | String |
 | port | 3000 | Integer |
 | env | development | String |
 
