@@ -1,11 +1,10 @@
 {
   "name": "node-img-placeholder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "run a local image placeholder service",
-  "main": "lib/index.js",
-  "bin": "lib/index.js",
+  "main": "bin/www",
   "scripts": {
-    "start": "node lib/index.js",
+    "start": "node bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
