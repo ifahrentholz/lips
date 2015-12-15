@@ -1,4 +1,4 @@
-# LIPS v1.0.1
+# LIPS v1.0.2
 
 > local image placeholder service
 
@@ -38,7 +38,7 @@ The LIPS service was rewritten and depends now on [Cairo](http://cairographics.o
 ## Configure the LIPS service to fit your needs:
     lib/config/config.js
 
-> User settings
+> Settings
 
 | setting | default | type | parameter
 | --------| ------- | ---- | ----------|
