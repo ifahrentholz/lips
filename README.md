@@ -21,21 +21,52 @@ Windows | [Instructions on this wiki](https://github.com/Automattic/node-canvas/
 
 
 ## Run npm:install to install the necessary node modules
- 
+
     npm install
-    
-    
+
+
 ## Start the service
 
     npm start
     
     
-## Open your Browser at <a href="http://localhost:3000/gen/800x800.png/fff/bada55" target="_blank">local-server</a>
+## Open your Browser at:
 
-    The url pattern is:
-    http://localhost:3000/gen/550x250.png?color=000000&bg=bada55&text=[Text]
-    
-    
+    http://localhost:3000/lips/800x600.png
+
+
+## Configure the LIPS service to fit your needs:
+    lib/config/config.js
+
+> App settings
+
+| setting | default | type
+| --------| ------- | ---- |
+| serviceName | "lips" | Boolean |
+| port | 3000 | Integer |
+| env | development | String |
+
+
+> Image settings
+
+| setting | default | type | parameter |
+| --------| ------- | ---- | ----------|
+| font | Arial | String | &font=Arial |
+| fontSize | 24px | String | &fontSize=12px |
+| fontColor | 000000 | HEX | &fontColor=fff000 |
+| text | true | Boolean | &text=false |
+| fill | 09F | HEX | &fill=bada55 |
+
+> Network settings
+
+| setting | default | type | parameter |
+| --------| ------- | ---- | ----------|
+| delay | 0 | Integer | &delay=5000 |
+| contentType | "png" | String | .png |
+| maxAge | 3153600 | Integer | &maxAge=0 |
+| expiryDate| new Date() | DateTime | &expiryDate=[DATETIME] |
+
+
 ## TODO's
 
 * Provide a home route with an introduction index page
