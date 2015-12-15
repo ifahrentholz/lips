@@ -42,7 +42,7 @@ Windows | [Instructions on this wiki](https://github.com/Automattic/node-canvas/
 
 | setting | default | type
 | --------| ------- | ---- |
-| serviceName | "lips" | String |
+| serviceName | lips | String |
 | port | 3000 | Integer |
 | env | development | String |
 
