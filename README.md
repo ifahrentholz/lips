@@ -1,19 +1,23 @@
-# LIPS v1.0.1
+# LIPS v1.1.0
 
 > local image placeholder service
 
 ## Install dependencies
-The LIPS service was rewritten and depends now on [Cairo](http://cairographics.org/)
+The LIPS service was rewritten and depends now on [GraphicsMagick](http://www.graphicsmagick.org/)
 
-| OS | Command |
-| ----- | ----- |
-| OS X | `brew install pkg-config cairo libpng jpeg giflib` |
-| Ubuntu | `sudo apt-get install libcairo2-dev libjpeg8-dev libpango1.0-dev libgif-dev build-essential g++` |
-| Fedora | `sudo yum install cairo cairo-devel cairomm-devel libjpeg-turbo-devel pango pango-devel pangomm pangomm-devel giflib-devel` |
-| Solaris | `pkgin install cairo pkg-config xproto renderproto kbproto xextproto` |
-| Windows | [Instructions on this wiki](https://github.com/Automattic/node-canvas/wiki/Installation---Windows) |
+#### OSX
 
-**El Capitan users:** If you have recently updated to El Capitan and are experiencing trouble when compiling, run the following command: `xcode-select --install`. Read more about the problem [on Stack Overflow](http://stackoverflow.com/a/32929012/148072).
+    brew install graphicsmagick
+    
+#### Ubuntu
+
+    sudo add-apt-repository ppa:dhor/myway
+    sudo apt-get update
+    sudo apt-get install graphicsmagick
+    
+#### Windows (binary download)
+
+    ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/windows/
 
 ## Clone this repository to your local machine
 
@@ -38,7 +42,7 @@ The LIPS service was rewritten and depends now on [Cairo](http://cairographics.o
 ## Configure the LIPS service to fit your needs:
     lib/config/config.js
 
-> User settings
+> Settings
 
 | setting | default | type | parameter
 | --------| ------- | ---- | ----------|
@@ -49,13 +53,8 @@ The LIPS service was rewritten and depends now on [Cairo](http://cairographics.o
 | contentType | "png" | String | .png |
 | maxAge | 3153600 | Integer | &maxAge=0 |
 | expiryDate| new Date() | DateTime | &expiryDate=[DATETIME] |
-| font | Arial | String | &font=Arial |
 | fontSize | 24px | String | &fontSize=12px |
 | fontColor | 000000 | HEX | &fontColor=fff000 |
-| text | true | Boolean | &text=false |
+| text | - | String | &text=Hallo Welt |
 | fill | 09F | HEX | &fill=bada55 |
 
-
-## TODO's
-
-* Provide a home route with an introduction index page
