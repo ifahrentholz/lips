@@ -1,23 +1,29 @@
-# LIPS v1.1.0
+# LIPS v1.1.1
 
 > local image placeholder service
 
 ## Install dependencies
-The LIPS service was rewritten and depends now on [GraphicsMagick](http://www.graphicsmagick.org/)
+The LIPS service was rewritten and depends now on:
+- [GraphicsMagick](http://www.graphicsmagick.org/)
+- [Ghostscript](http://www.ghostscript.com/)
+
 
 #### OSX
 
     brew install graphicsmagick
-    
+    brew install ghostscript
+
 #### Ubuntu
 
     sudo add-apt-repository ppa:dhor/myway
     sudo apt-get update
     sudo apt-get install graphicsmagick
-    
-#### Windows (binary download)
+    sudo apt-get install ghostscript
+
+#### Windows (binary downloads)
 
     ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/windows/
+    http://www.ghostscript.com/download/gsdnld.html
 
 ## Clone this repository to your local machine
 
@@ -47,7 +53,7 @@ The LIPS service was rewritten and depends now on [GraphicsMagick](http://www.gr
 | setting | default | type | parameter
 | --------| ------- | ---- | ----------|
 | serviceName | lips | String | - |
-| port | 3000 | Integer | - | 
+| port | 3000 | Integer | - |
 | env | development | String | - |
 | delay | 0 | Integer | &delay=5000 |
 | contentType | "png" | String | .png |
