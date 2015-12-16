@@ -15,6 +15,13 @@ The LIPS service was rewritten and depends now on [Cairo](http://cairographics.o
 
 **El Capitan users:** If you have recently updated to El Capitan and are experiencing trouble when compiling, run the following command: `xcode-select --install`. Read more about the problem [on Stack Overflow](http://stackoverflow.com/a/32929012/148072).
 
+**OSX: no ldconfig error:** 
+
+    sudo echo > /usr/local/bin/ldconfig
+    sudo chmod +x /usr/local/bin/ldconfig
+    npm install
+    sudo rm -f /usr/local/bin/ldconfig
+
 ## Clone this repository to your local machine
 
     git clone https://github.com/ifahrentholz/lips .
