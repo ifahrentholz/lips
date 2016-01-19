@@ -1,3 +1,7 @@
+[![Travis](https://img.shields.io/travis/ifahrentholz/lips.svg)]()
+[![npm](https://img.shields.io/npm/dt/node-img-placeholder.svg)]()
+[![node](https://img.shields.io/node/v/node-img-placeholder.svg)]()
+
 # LIPS
 
 > local image placeholder service
