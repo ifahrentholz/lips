@@ -3,8 +3,11 @@ var config = require("../lib/config/app").App;
 var request = require("supertest");
 var expect = require("chai").expect;
 
+
 describe("Test", function() {
+
   var url;
+
 
   before(function(done) {
     // start the app
@@ -16,6 +19,7 @@ describe("Test", function() {
     done();
   });
 
+
   describe('image types', function() {
     it('it should return an png image', function(done) {
       request(url)
@@ -23,6 +27,7 @@ describe("Test", function() {
         .expect('Content-Type', /image\/png/)
         .expect(200, done)
     });
+
     it('should return an jpg image', function(done) {
       request(url)
         .get('200x133.jpg')
@@ -31,6 +36,7 @@ describe("Test", function() {
     });
   });
 
+
   describe('Cache-Control', function() {
     it('should have no cache', function(done) {
       request(url)
@@ -38,8 +44,10 @@ describe("Test", function() {
         .expect('Content-Type', /image\/png/)
         .expect('Cache-Control', /public, max-age=1337/)
         .expect(200, done);
-    })
+    });
   });
+
+
   describe('Expires', function() {
     it('should have optional expiry date', function(done) {
       var date = new Date(Date.parse(2088, 8, 3, 10, 0, 0, 0)).toUTCString();
@@ -49,7 +57,6 @@ describe("Test", function() {
         .expect('Content-Type', /image\/png/)
         .expect('Expires', date)
         .expect(200, done)
-    })
-    ;
+    });
   });
 });

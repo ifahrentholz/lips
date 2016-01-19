@@ -1,12 +1,14 @@
 {
   "name": "node-img-placeholder",
-  "version": "1.1.1",
+  "version": "0.0.0-semantically-released",
   "description": "run a local image placeholder service",
   "main": "lib/index.js",
   "bin": "bin/www",
   "scripts": {
+    "commit": "git-cz",
     "start": "node bin/www",
-    "test": "_mocha ./tests/*.test.js"
+    "test": "_mocha ./tests/*.test.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
     "node local image placeholder service",
@@ -36,14 +38,21 @@
   "dependencies": {
     "express": "^4.13.3",
     "gm": "^1.21.1",
-    "jade": "^1.11.0",
     "morgan": "^1.6.1",
     "node.extend": "^1.1.5",
     "serve-favicon": "^2.3.0"
   },
   "devDependencies": {
     "chai": "3.4.1",
+    "cz-conventional-changelog": "^1.1.5",
+    "jade": "^1.11.0",
     "mocha": "2.3.4",
+    "semantic-release": "^4.3.5",
     "supertest": "1.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
