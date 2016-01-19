@@ -1,4 +1,4 @@
-sudo: false
+sudo: true
 language: node_js
 cache:
   directories:
@@ -8,9 +8,13 @@ notifications:
 node_js:
   - '4'
 before_install:
+  - sudo apt-get install graphicsmagick
+  - sudo apt-get install ghostscript
   - npm i -g npm@^2.0.0
 before_script:
   - npm prune
+script:
+  - npm run test
 after_success:
   - npm run report-coverage
   - npm run semantic-release
