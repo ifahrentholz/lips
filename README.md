@@ -1,6 +1,7 @@
-[![Travis](https://img.shields.io/travis/ifahrentholz/lips.svg)]()
-[![npm](https://img.shields.io/npm/dt/node-img-placeholder.svg)]()
-[![node](https://img.shields.io/node/v/node-img-placeholder.svg)]()
+[![Travis](https://img.shields.io/travis/ifahrentholz/lips.svg?style=flat-square)]()
+[![npm](https://img.shields.io/npm/dt/node-img-placeholder.svg?style=flat-square)]()
+[![node](https://img.shields.io/node/v/node-img-placeholder.svg?style=flat-square)]()
+[![Dependency Status](https://www.versioneye.com/user/projects/569e1ecd2025a60031000402/badge.svg?style=flat)](https://www.versioneye.com/user/projects/569e1ecd2025a60031000402)
 
 # LIPS
 
