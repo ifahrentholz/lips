@@ -8,8 +8,9 @@ notifications:
 node_js:
   - '4'
 before_install:
-  - sudo apt-get install graphicsmagick
-  - sudo apt-get install ghostscript
+  - sudo apt-get -qq update
+  - sudo apt-get install -y graphicsmagick
+  - sudo apt-get install -y ghostscript
   - npm i -g npm@^2.0.0
 before_script:
   - npm prune
