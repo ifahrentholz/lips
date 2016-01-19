@@ -8,7 +8,8 @@
     "commit": "git-cz",
     "report-coverage": "cat coverage/lcov.info | codecov",
     "start": "node bin/www",
-    "test": "istanbul cover -x *.test.js _mocha -- -R spec ./tests/*.test.js",
+    "test": "",
+    "test:single": "istanbul cover -x *.test.js _mocha -- -R spec ./tests/*.test.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
