@@ -1,4 +1,5 @@
 [![Travis](https://img.shields.io/travis/ifahrentholz/lips.svg?style=flat-square)]()
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 
 [![npm](https://img.shields.io/npm/l/node-img-placeholder.svg?style=flat-square)]()
 [![Dependency Status](https://www.versioneye.com/user/projects/569e1ecd2025a60031000402/badge.svg?style=flat)](https://www.versioneye.com/user/projects/569e1ecd2025a60031000402)
