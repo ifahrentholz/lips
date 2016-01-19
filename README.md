@@ -46,7 +46,7 @@ The LIPS service was rewritten and depends now on:
 
 
 ## Configure the LIPS service to fit your needs:
-    lib/config/config.js
+    lib/config/app.js
 
 > Settings
 
