@@ -6,8 +6,9 @@
   "bin": "bin/www",
   "scripts": {
     "commit": "git-cz",
+    "report-coverage": "cat coverage/lcov.info | codecov",
     "start": "node bin/www",
-    "test": "_mocha ./tests/*.test.js",
+    "test": "istanbul cover -x *.test.js _mocha -- -R spec ./tests/*.test.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
@@ -44,7 +45,10 @@
   },
   "devDependencies": {
     "chai": "3.4.1",
+    "codecov.io": "^0.1.6",
     "cz-conventional-changelog": "^1.1.5",
+    "ghooks": "^1.0.3",
+    "istanbul": "^0.4.2",
     "jade": "^1.11.0",
     "mocha": "2.3.4",
     "semantic-release": "^4.3.5",
@@ -53,6 +57,9 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run test"
     }
   }
 }
