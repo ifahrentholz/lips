@@ -1,6 +1,6 @@
 {
   "name": "node-img-placeholder",
-  "version": "0.0.0-semantically-released",
+  "version": "3.0.0",
   "description": "run a local image placeholder service",
   "main": "lib/index.js",
   "bin": "bin/www",
