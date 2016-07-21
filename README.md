@@ -67,10 +67,10 @@ The LIPS service was rewritten and depends now on:
 | contentType | "png" | String | .png |
 | maxAge | 3153600 | Integer | &maxAge=0 |
 | expiryDate| new Date() | DateTime | &expiryDate=[DATETIME] |
-| fontSize | 24px | String | &fontSize=12px |
-| fontColor | 000000 | HEX | &fontColor=fff000 |
-| text | - | String | &text=Hallo Welt |
-| fill | 09F | HEX | &fill=bada55 |
+| txtsize | 24px | String | &txtsize=12px |
+| txtclr | 000000 | HEX | &txtclr=fff000 |
+| txt | [width]x[height] | String | &txt=hello |
+| bg | 09F | HEX | &bg=bada55 |
 
 
 ## License
