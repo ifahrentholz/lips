@@ -2,7 +2,7 @@
   "name": "node-img-placeholder",
   "version": "4.0.0",
   "description": "run a local image placeholder service",
-  "main": "lib/index.js",
+  "main": "lib/server.js",
   "bin": "bin/www",
   "scripts": {
     "commit": "git-cz",
@@ -38,9 +38,9 @@
   },
   "dependencies": {
     "express": "4.13.3",
+    "extend": "3.0.0",
     "gm": "1.21.1",
     "morgan": "1.6.1",
-    "node.extend": "1.1.5",
     "serve-favicon": "2.3.0"
   },
   "devDependencies": {
