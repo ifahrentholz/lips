@@ -6,12 +6,12 @@ describe("Imageservice", function() {
   var ror = false;
   var buf = false;
   var options = {
-    text: "test",
+    txt: "test",
     width: 200,
     height: 200,
-    fill: "bada55",
-    font: "Arial",
-    "fontSize": 12,
+    bg: "bada55",
+    fontFamily: "Arial",
+    txtsize: 12,
     contentType: "png"
   };
 
