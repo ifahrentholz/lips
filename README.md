@@ -53,16 +53,15 @@ The LIPS service was rewritten and depends now on:
     http://localhost:3000/lips/800x600.png
 
 
-## Configure the LIPS service to fit your needs:
-    lib/config/app.js
+## Configure the defaults:
+    lib/config/config.js
 
 > Settings
 
 | setting | default | type | parameter
 | --------| ------- | ---- | ----------|
-| serviceName | lips | String | - |
+| namespace | lips | String | - |
 | port | 3000 | Integer | - |
-| env | development | String | - |
 | delay | 0 | Integer | &delay=5000 |
 | contentType | "png" | String | .png |
 | maxAge | 3153600 | Integer | &maxAge=0 |
