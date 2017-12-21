@@ -1,6 +1,6 @@
 {
   "name": "node-img-placeholder",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "run a local image placeholder service",
   "main": "lib/server.js",
   "bin": "bin/www",
@@ -37,9 +37,9 @@
     "url": "https://github.com/ifahrentholz/lips"
   },
   "dependencies": {
-    "express": "4.13.3",
-    "extend": "3.0.0",
-    "gm": "1.21.1",
+    "express": "^4.13.3",
+    "extend": "^3.0.0",
+    "gm": "^1.21.1",
     "morgan": "1.6.1",
     "serve-favicon": "2.3.0"
   },
