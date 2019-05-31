@@ -3,22 +3,19 @@ var config = require("../lib/config/config");
 var request = require("supertest");
 var expect = require("chai").expect;
 
-var yolo;
+var app;
 
 describe("Test", function() {
   var url;
-  var serv;
 
   before(function(done) {
-    yolo = server.start();
+    app = server.start();
     url = "http://localhost:" + config.port + "/" + config.namespace + "/";
     done();
   });
 
   after(function(done) {
-    console.log("APP:::::::::::::::::::::::::::::::::::");
-    console.log(yolo);
-    yolo.close();
+    app.close();
     done();
   });
 
