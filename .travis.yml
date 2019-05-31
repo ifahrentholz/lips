@@ -12,6 +12,7 @@ before_install:
   - sudo apt-get install -y graphicsmagick
   - sudo apt-get install -y ghostscript
   - npm i -g npm
+  - npm i
 before_script:
   - npm prune
 script:
