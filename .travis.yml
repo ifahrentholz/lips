@@ -1,22 +1,19 @@
 sudo: true
 language: node_js
-cache:
-  directories:
-    - node_modules
 notifications:
   email: false
 node_js:
   - "10.15.3"
 cache:
+  npm: true,
   directories:
     - "node_modules"
-    - "$HOME/.npm"
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y graphicsmagick
   - sudo apt-get install -y ghostscript
-install:
-  - npm install
+before_script:
+  - npm prune
 script:
   - npm run test
 branches:
