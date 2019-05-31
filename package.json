@@ -1,6 +1,6 @@
 {
   "name": "node-img-placeholder",
-  "version": "4.1.2",
+  "version": "4.1.3",
   "description": "run a local image placeholder service",
   "main": "lib/server.js",
   "bin": "bin/www",
@@ -44,11 +44,10 @@
   },
   "devDependencies": {
     "chai": "4.2.0",
-    "cz-conventional-changelog": "2.1.0",
     "ghooks": "2.0.4",
     "istanbul": "0.4.5",
-    "mocha": "6.0.0",
-    "semantic-release": "15.13.3",
+    "mocha": "^6.1.4",
+    "semantic-release": "15.13.12",
     "supertest": "3.4.2"
   },
   "config": {
