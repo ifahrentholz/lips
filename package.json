@@ -1,14 +1,13 @@
 {
   "name": "node-img-placeholder",
-  "version": "4.1.3",
+  "version": "4.1.4",
   "description": "run a local image placeholder service",
   "main": "lib/server.js",
   "bin": "bin/www",
   "scripts": {
     "commit": "git-cz",
     "start": "node bin/www",
-    "test": "istanbul cover -x *.test.js _mocha -- -R spec ./tests/*.test.js",
-    "semantic-release": "semantic-release && npm publish && semantic-release post"
+    "test": "istanbul cover -x *.test.js _mocha -- -R spec ./tests/*.test.js"
   },
   "keywords": [
     "node local image placeholder service",
@@ -47,7 +46,6 @@
     "ghooks": "2.0.4",
     "istanbul": "0.4.5",
     "mocha": "6.1.4",
-    "semantic-release": "15.13.12",
     "supertest": "4.0.2"
   },
   "config": {
