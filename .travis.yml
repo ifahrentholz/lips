@@ -12,6 +12,7 @@ before_install:
   - sudo apt-get install -y graphicsmagick
   - sudo apt-get install -y ghostscript
   - npm i
+  - npm i -g validate-npm-package-name
 script:
   - npm run test
 branches:
