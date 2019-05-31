@@ -6,7 +6,7 @@ cache:
 notifications:
   email: false
 node_js:
-  - '4'
+  - "10.15.3"
 before_install:
   - sudo apt-get -qq update
   - sudo apt-get install -y graphicsmagick
