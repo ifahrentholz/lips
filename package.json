@@ -48,7 +48,7 @@
     "istanbul": "0.4.5",
     "mocha": "^6.1.4",
     "semantic-release": "15.13.12",
-    "supertest": "3.4.2"
+    "supertest": "4.0.2"
   },
   "config": {
     "commitizen": {
