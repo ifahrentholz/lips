@@ -35,7 +35,7 @@ The LIPS service was rewritten and depends now on:
 
 ## Clone this repository to your local machine
 
-    git clone https://github.com/ifahrentholz/lips .
+    git clone https://github.com/ifahrentholz/lips 
 
 ## Run npm:install to install the necessary node modules
 
