@@ -5,16 +5,16 @@
 [![node](https://img.shields.io/node/v/node-img-placeholder.svg?style=flat-square)]()
 [![npm](https://img.shields.io/npm/dt/node-img-placeholder.svg?style=flat-square)]()
 
-
 # LIPS
 
 > local image placeholder service
 
 ## Install dependencies
+
 The LIPS service was rewritten and depends now on:
+
 - [GraphicsMagick](http://www.graphicsmagick.org/)
 - [Ghostscript](http://www.ghostscript.com/)
-
 
 #### OSX
 
@@ -35,47 +35,44 @@ The LIPS service was rewritten and depends now on:
 
 ## Clone this repository to your local machine
 
-    git clone https://github.com/ifahrentholz/lips .
-
+    git clone https://github.com/ifahrentholz/lips 
 
 ## Run npm:install to install the necessary node modules
 
     npm install
 
-
 ## Start the service
 
     npm start
-
 
 ## Open your Browser at:
 
     http://localhost:3000/lips/800x600.png
 
-
 ## Configure the defaults:
+
     lib/config/config.js
 
 > Settings
 
-| setting | default | type | parameter
-| --------| ------- | ---- | ----------|
-| namespace | lips | String | - |
-| port | 3000 | Integer | - |
-| delay | 0 | Integer | &delay=5000 |
-| contentType | "png" | String | .png |
-| maxAge | 3153600 | Integer | &maxAge=0 |
-| expiryDate| new Date() | DateTime | &expiryDate=[DATETIME] |
-| txtsize | 24px | String | &txtsize=12px |
-| txtclr | 000000 | HEX | &txtclr=fff000 |
-| txt | [width]x[height] | String | &txt=hello |
-| bg | 09F | HEX | &bg=bada55 |
-
+| setting     | default          | type     | parameter              |
+| ----------- | ---------------- | -------- | ---------------------- |
+| namespace   | lips             | String   | -                      |
+| port        | 3000             | Integer  | -                      |
+| delay       | 0                | Integer  | &delay=5000            |
+| contentType | "png"            | String   | .png                   |
+| maxAge      | 3153600          | Integer  | &maxAge=0              |
+| expiryDate  | new Date()       | DateTime | &expiryDate=[DATETIME] |
+| txtsize     | 24px             | String   | &txtsize=12px          |
+| txtclr      | 000000           | HEX      | &txtclr=fff000         |
+| txt         | [width]x[height] | String   | &txt=hello             |
+| bg          | 09F              | HEX      | &bg=bada55             |
 
 ## License
+
 The MIT License (MIT)
 
-Copyright (c) 2016 Ingo Fahrentholz
+Copyright (c) 2016-2020 Ingo Fahrentholz
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
