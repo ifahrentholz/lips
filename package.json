@@ -46,7 +46,7 @@
     "ghooks": "2.0.4",
     "istanbul": "0.4.5",
     "mocha": "8.0.1",
-    "supertest": "4.0.2"
+    "supertest": "6.1.3"
   },
   "config": {
     "commitizen": {
