@@ -45,7 +45,7 @@
     "chai": "4.2.0",
     "ghooks": "2.0.4",
     "istanbul": "0.4.5",
-    "mocha": "8.0.1",
+    "mocha": "8.4.0",
     "supertest": "4.0.2"
   },
   "config": {
