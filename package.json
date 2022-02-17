@@ -35,7 +35,7 @@
     "url": "https://github.com/ifahrentholz/lips"
   },
   "dependencies": {
-    "express": "4.17.1",
+    "express": "4.17.3",
     "extend": "3.0.2",
     "gm": "1.23.1",
     "morgan": "1.10.0",
